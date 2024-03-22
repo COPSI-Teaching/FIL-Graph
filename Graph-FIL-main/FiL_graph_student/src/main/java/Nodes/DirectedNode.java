@@ -60,6 +60,21 @@ public class DirectedNode extends AbstractNode {
         return preds.size();
     }
 
+/** 
+	 * @return the list of nodes that are successors of the current node represented by "this"
+	 */
+	public Set<DirectedNode> getListSuccs() {
+		return this.succs.keySet();
+	}
+	
+	/** 
+	 * @return the list of nodes that are predecessors of the current node represented by "this"
+	 */
+	public Set<DirectedNode> getListPreds() {
+		return this.preds.keySet();
+	}
+
+	
     /**
      * @param suc the new list of successors for node this
      */
